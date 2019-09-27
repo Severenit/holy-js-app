@@ -50,6 +50,7 @@ body {
 
 .body {
     padding-top: 38px;
+    padding-bottom: 24px;
 }
 
 .heading {
@@ -93,7 +94,7 @@ body {
     .grids-3-colums {
         grid-template-columns: repeat(var(--grids-card-count), 1fr);
         grid-column-gap: var(--size-grids-card-gutter);
-        padding: 0 var(--size-grids-card-offset);
+        padding: 0 0;
     }
 }
 
