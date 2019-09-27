@@ -47,3 +47,54 @@ body {
     line-height: var(--size-lineheight-body-m);
     font-size: var(--size-font-body-m);
 }
+
+.body {
+    padding-top: 38px;
+}
+
+.heading {
+    margin: 0 0 24px;
+    padding: 0;
+    font-family: var(--font-family-h-2);
+    font-weight: var(--font-weight-h-2);
+    letter-spacing: var(--font-spacing-h-2);
+    line-height: var(--size-lineheight-h-2);
+    font-size: var(--size-font-h-2);
+}
+.heading_m {
+    margin: 0 0 8px;
+    padding: 0;
+    font-family: var(--font-family-h-3);
+    font-weight: var(--font-weight-h-3);
+    letter-spacing: var(--font-spacing-h-3);
+    line-height: var(--size-lineheight-h-3);
+    font-size: var(--size-font-h-3);
+}
+
+.grids-3-colums {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--grids-web-3-column-count), 1fr);
+    grid-column-gap: var(--size-grids-web-3-column-gutter);
+    padding: 0 var(--size-grids-web-3-column-offset);
+    justify-items: stretch;
+}
+
+.grids-card {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--grids-card-count), 1fr);
+    grid-column-gap: var(--size-grids-card-gutter);
+    padding: 0 var(--size-grids-card-offset);
+    justify-items: stretch;
+}
+
+.card {
+    background-color: var(--color-absolute-white);
+    border-radius: 8px;
+    box-shadow: var(--effects-card-shadow);
+    margin-bottom: 20px;
+    padding: 20px 0;
+}

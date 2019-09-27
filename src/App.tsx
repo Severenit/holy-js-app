@@ -50,6 +50,57 @@ const App: React.FC = () => {
                   </div>
               </div>
           </header>
+          <section className='body'>
+              <div className="layout">
+                  <h1 className="heading">
+                      Trading ideas
+                  </h1>
+                  <div className="grids-3-colums">
+                      <div className="card">
+                          <div className="grids-card">
+                              <h2 className="heading_m">
+                                  To the Moon
+                              </h2>
+                          </div>
+                      </div>
+                      <div className="card">
+                          <div className="grids-card">
+                              <h2 className="heading_m">
+                                  End of Ethereum
+                              </h2>
+                          </div>
+                      </div>
+                      <div className="card">
+                          <div className="grids-card">
+                              <h2 className="heading_m">
+                                  To the Moon
+                              </h2>
+                          </div>
+                      </div>
+                      <div className="card">
+                          <div className="grids-card">
+                              <h2 className="heading_m">
+                                  End of Ethereum
+                              </h2>
+                          </div>
+                      </div>
+                      <div className="card">
+                          <div className="grids-card">
+                              <h2 className="heading_m">
+                                  To the Moon
+                              </h2>
+                          </div>
+                      </div>
+                      <div className="card">
+                          <div className="grids-card">
+                              <h2 className="heading_m">
+                                  End of Ethereum
+                              </h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
       </div>
   );
 }
