@@ -1,12 +1,28 @@
 import React from 'react';
 import './App.css';
 
+import logo from './assets/logo.png';
+
 const App: React.FC = () => {
   return (
       <div>
           <header>
               <div className='header-top'>
-
+                  <div className="layout">
+                      <div className="header-grids">
+                          <div className="logo">
+                              <img src={logo} alt="TW"/>
+                          </div>
+                          <div className="search">
+                              <input type="text" placeholder="Search"/>
+                          </div>
+                          <div className="button">
+                              <a href="#" className="link">
+                                  Sign in
+                              </a>
+                          </div>
+                      </div>
+                  </div>
               </div>
               <div className='header-bottom'>
                   <div className="layout">
