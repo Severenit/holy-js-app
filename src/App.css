@@ -81,7 +81,6 @@ body {
     justify-items: stretch;
 }
 
-/* Portrait and Landscape */
 @media screen and (max-width: 992px) {
     .grids-3-colums {
         grid-template-columns: repeat(var(--grids-web-2-column-count), 1fr);
@@ -114,4 +113,22 @@ body {
     box-shadow: var(--effects-card-shadow);
     margin-bottom: 20px;
     padding: 20px 0;
+}
+
+.picture {
+    border-radius: 4px;
+    border: 1px solid var(--color-cold-gray-150);
+    background: var(--color-absolute-white);
+    height: 254px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.paragraph {
+    font-family: var(--font-family-body-m);
+    font-weight: var(--font-weight-body-m);
+    letter-spacing: var(--font-spacing-body-m);
+    line-height: var(--size-lineheight-body-m);
+    font-size: var(--size-font-body-m);
 }

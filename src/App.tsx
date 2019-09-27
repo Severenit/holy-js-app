@@ -61,6 +61,13 @@ const App: React.FC = () => {
                               <h2 className="heading_m">
                                   To the Moon
                               </h2>
+
+                              <div className="picture">
+
+                              </div>
+                              <div className="paragraph">
+                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
+                              </div>
                           </div>
                       </div>
                       <div className="card">
@@ -68,6 +75,12 @@ const App: React.FC = () => {
                               <h2 className="heading_m">
                                   End of Ethereum
                               </h2>
+                              <div className="picture">
+
+                              </div>
+                              <div className="paragraph">
+                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
+                              </div>
                           </div>
                       </div>
                       <div className="card">
@@ -75,6 +88,13 @@ const App: React.FC = () => {
                               <h2 className="heading_m">
                                   To the Moon
                               </h2>
+
+                              <div className="picture">
+
+                              </div>
+                              <div className="paragraph">
+                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
+                              </div>
                           </div>
                       </div>
                       <div className="card">
@@ -82,6 +102,13 @@ const App: React.FC = () => {
                               <h2 className="heading_m">
                                   End of Ethereum
                               </h2>
+
+                              <div className="picture">
+
+                              </div>
+                              <div className="paragraph">
+                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
+                              </div>
                           </div>
                       </div>
                       <div className="card">
@@ -89,6 +116,13 @@ const App: React.FC = () => {
                               <h2 className="heading_m">
                                   To the Moon
                               </h2>
+
+                              <div className="picture">
+
+                              </div>
+                              <div className="paragraph">
+                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
+                              </div>
                           </div>
                       </div>
                       <div className="card">
@@ -96,6 +130,13 @@ const App: React.FC = () => {
                               <h2 className="heading_m">
                                   End of Ethereum
                               </h2>
+
+                              <div className="picture">
+
+                              </div>
+                              <div className="paragraph">
+                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
+                              </div>
                           </div>
                       </div>
                   </div>
