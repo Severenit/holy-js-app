@@ -81,6 +81,23 @@ body {
     justify-items: stretch;
 }
 
+/* Portrait and Landscape */
+@media screen and (max-width: 992px) {
+    .grids-3-colums {
+        grid-template-columns: repeat(var(--grids-web-2-column-count), 1fr);
+        grid-column-gap: var(--size-grids-web-2-column-gutter);
+        padding: 0 var(--size-grids-web-2-column-offset);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grids-3-colums {
+        grid-template-columns: repeat(var(--grids-card-count), 1fr);
+        grid-column-gap: var(--size-grids-card-gutter);
+        padding: 0 var(--size-grids-card-offset);
+    }
+}
+
 .grids-card {
     position: relative;
     max-width: 100%;
