@@ -2,6 +2,84 @@ import React from 'react';
 import './App.css';
 
 import logo from './assets/logo.png';
+import {Card} from './components/card/card';
+import {Menu} from './components/menu/menu';
+import {Chart} from './icons';
+
+const CARD_DATA = [
+    {
+        id: 1,
+        title: 'To the Moon',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 2,
+        title: 'End of Ethereum',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 3,
+        title: 'To the Moon',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 4,
+        title: 'End of Ethereum',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 5,
+        title: 'To the Moon',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 6,
+        title: 'End of Ethereum',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 7,
+        title: 'To the Moon',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    },
+    {
+        id: 8,
+        title: 'End of Ethereum',
+        description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
+    }
+]
+
+const MENU_DATA = [
+    {
+        id: 1,
+        name: 'Ideas'
+    },
+    {
+        id: 2,
+        name: 'Markets'
+    },
+    {
+        id: 3,
+        name: 'Scripts'
+    },
+    {
+        id: 4,
+        name: 'Screener'
+    },
+    {
+        id: 5,
+        name: 'Shows'
+    },
+    {
+        id: 6,
+        name: 'Chart',
+        icons: <Chart/>
+    },
+    {
+        id: 7,
+        name: 'More'
+    }
+]
 
 const App: React.FC = () => {
   return (
@@ -13,7 +91,7 @@ const App: React.FC = () => {
                           <div className="logo">
                               <img src={logo} alt="TW"/>
                           </div>
-                          <div className="search">
+                          <div className="search-input-block">
                               <input type="text" placeholder="Search"/>
                           </div>
                           <div className="button">
@@ -26,43 +104,7 @@ const App: React.FC = () => {
               </div>
               <div className='header-bottom'>
                   <div className="layout">
-                      <ul className="menu">
-                          <li>
-                              <a href="#">
-                                  Ideas
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Markets
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Scripts
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Screener
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Shows
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Chart
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  More
-                              </a>
-                          </li>
-                      </ul>
+                      <Menu items={MENU_DATA} />
                   </div>
               </div>
           </header>
@@ -72,89 +114,9 @@ const App: React.FC = () => {
                       Trading ideas
                   </h1>
                   <div className="grids-3-colums">
-                      <div className="card">
-                          <div className="grids-card">
-                              <h2 className="heading_m">
-                                  To the Moon
-                              </h2>
-
-                              <div className="picture">
-
-                              </div>
-                              <div className="paragraph">
-                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
-                              </div>
-                          </div>
-                      </div>
-                      <div className="card">
-                          <div className="grids-card">
-                              <h2 className="heading_m">
-                                  End of Ethereum
-                              </h2>
-                              <div className="picture">
-
-                              </div>
-                              <div className="paragraph">
-                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
-                              </div>
-                          </div>
-                      </div>
-                      <div className="card">
-                          <div className="grids-card">
-                              <h2 className="heading_m">
-                                  To the Moon
-                              </h2>
-
-                              <div className="picture">
-
-                              </div>
-                              <div className="paragraph">
-                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
-                              </div>
-                          </div>
-                      </div>
-                      <div className="card">
-                          <div className="grids-card">
-                              <h2 className="heading_m">
-                                  End of Ethereum
-                              </h2>
-
-                              <div className="picture">
-
-                              </div>
-                              <div className="paragraph">
-                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
-                              </div>
-                          </div>
-                      </div>
-                      <div className="card">
-                          <div className="grids-card">
-                              <h2 className="heading_m">
-                                  To the Moon
-                              </h2>
-
-                              <div className="picture">
-
-                              </div>
-                              <div className="paragraph">
-                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
-                              </div>
-                          </div>
-                      </div>
-                      <div className="card">
-                          <div className="grids-card">
-                              <h2 className="heading_m">
-                                  End of Ethereum
-                              </h2>
-
-                              <div className="picture">
-
-                              </div>
-                              <div className="paragraph">
-                                  Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.
-                              </div>
-                          </div>
-                      </div>
+                      {
+                          CARD_DATA.map(item => <Card key={item.id} title={item.title} description={item.description}/>)
+                      }
                   </div>
               </div>
           </section>

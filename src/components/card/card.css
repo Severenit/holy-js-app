@@ -1,0 +1,45 @@
+.grids-card {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--grids-card-count), 1fr);
+    grid-column-gap: var(--size-grids-card-gutter);
+    padding: 0 var(--size-grids-card-offset);
+    justify-items: stretch;
+}
+
+.card {
+    background-color: var(--color-absolute-white);
+    border-radius: 8px;
+    box-shadow: var(--effects-card-shadow);
+    margin-bottom: var(--size-spacers-spacer-20);
+    padding: var(--size-spacers-spacer-20) 0;
+}
+
+.card .title {
+    margin: 0 0 var(--size-spacers-spacer-8);
+    padding: 0;
+    font-family: var(--font-family-h-3);
+    font-weight: var(--font-weight-h-3);
+    letter-spacing: var(--font-spacing-h-3);
+    line-height: var(--size-lineheight-h-3);
+    font-size: var(--size-font-h-3);
+}
+
+.card .picture {
+    border-radius: 4px;
+    border: 1px solid var(--color-cold-gray-150);
+    background: var(--color-absolute-white);
+    height: 254px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: var(--size-spacers-spacer-12);
+}
+
+.card .paragraph {
+    font-family: var(--font-family-body-m);
+    font-weight: var(--font-weight-body-m);
+    letter-spacing: var(--font-spacing-body-m);
+    line-height: var(--size-lineheight-body-m);
+    font-size: var(--size-font-body-m);
+}

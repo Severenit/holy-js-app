@@ -1,0 +1,41 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon_size_xs {
+    width: 12px;
+    height: 12px;
+}
+
+.icon_size_s {
+    width: 18px;
+    height: 18px;
+}
+
+.icon_size_m {
+    width: 24px;
+    height: 24px;
+}
+
+.icon_size_l {
+    width: 30px;
+    height: 30px;
+}
+
+.icon_size_xl {
+    width: 36px;
+    height: 36px;
+}
+
+.icon_size_xxl {
+    width: 48px;
+    height: 48px;
+}
+
+.icon_size_xxxl {
+    width: 88px;
+    height: 88px;
+}

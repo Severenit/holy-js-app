@@ -1,0 +1,26 @@
+.menu {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 54px;
+    padding: 0;
+}
+.menu li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--color-cold-gray-100);
+    font-family: var(--font-family-body-m);
+    font-weight: var(--font-weight-body-m);
+    letter-spacing: var(--font-spacing-body-m);
+    line-height: var(--size-lineheight-body-m);
+    font-size: var(--size-font-body-m);
+}
