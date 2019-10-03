@@ -51,7 +51,7 @@ body {
 }
 
 @media screen and (max-width: 520px) {
-    .search {
+    .search-input-block {
         display: none;
     }
 }
@@ -79,6 +79,7 @@ body {
     letter-spacing: var(--font-spacing-body-m);
     line-height: var(--size-lineheight-body-m);
     font-size: var(--size-font-body-m);
+    margin-right: 24px;
 }
 
 .header-bottom {

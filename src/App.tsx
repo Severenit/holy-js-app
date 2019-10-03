@@ -5,6 +5,7 @@ import logo from './assets/logo.png';
 import {Card} from './components/card/card';
 import {Menu} from './components/menu/menu';
 import {IconChart} from './icons';
+import {Button} from './components/button/button';
 
 const CARD_DATA = [
     {
@@ -122,6 +123,7 @@ const App: React.FC = () => {
                               <a href="#" className="link">
                                   Sign in
                               </a>
+                              <Button>Join for free</Button>
                           </div>
                       </div>
                   </div>
