@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import logo from './assets/logo.png';
+import { ReactComponent as Logo } from "./assets/Logo.svg";
 import {Card} from './components/card/card';
 import {Menu} from './components/menu/menu';
 import {IconChart} from './icons';
@@ -114,7 +114,7 @@ const App: React.FC = () => {
                   <div className="layout">
                       <div className="header-grids">
                           <div className="logo">
-                              <img src={logo} alt="TW"/>
+                              <Logo/>
                           </div>
                           <div className="search-input-block">
                               <input type="text" placeholder="Search"/>

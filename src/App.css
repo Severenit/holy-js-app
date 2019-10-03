@@ -41,6 +41,10 @@ body {
     height: 54px;
 }
 
+.logo svg .logo-cloud {
+    fill: var(--color-brand-color);
+}
+
 .search-input-block {
     padding-left: 150px;
     padding-right: 84px;
@@ -51,6 +55,7 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+    .logo svg .logo-string,
     .search-input-block {
         display: none;
     }
