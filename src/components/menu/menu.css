@@ -24,3 +24,7 @@
     line-height: var(--size-lineheight-body-m);
     font-size: var(--size-font-body-m);
 }
+
+.menu li a path {
+    fill: var(--color-cold-gray-100);
+}

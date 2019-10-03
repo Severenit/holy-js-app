@@ -1,0 +1,22 @@
+.card-user {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-body-m);
+    font-weight: var(--font-weight-body-m);
+    letter-spacing: var(--font-spacing-body-m);
+    line-height: var(--size-lineheight-body-m);
+    font-size: var(--size-font-body-m);
+    color: var(--color-cold-gray-900);
+}
+
+.card-user .avatar {
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-cold-gray-150);
+    border-radius: var(--size-border-radius-card-user);
+    margin-right: 8px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

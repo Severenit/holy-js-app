@@ -1,0 +1,24 @@
+.label-long {
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0 7px 0 1px;
+    border-radius: var(--size-border-radius-label-long);
+    background-color: var(--color-minty-green-500);
+    font-family: var(--font-family-caps);
+    font-weight: var(--font-weight-caps);
+    font-size: var(--size-font-caps);
+    line-height: var(--size-lineheight-caps);
+    color: var(--color-absolute-white);
+    text-transform: uppercase;
+}
+
+.icon-label-long {
+    margin-right: -2px;
+}
+
+.icon-label-long path {
+    stroke: var(--color-absolute-white);
+}

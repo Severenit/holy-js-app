@@ -1,0 +1,17 @@
+.button-comment {
+    cursor: pointer;
+    height: 36px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-body-s);
+    font-weight: var(--font-weight-body-s);
+    letter-spacing: var(--font-spacing-body-s);
+    line-height: var(--size-lineheight-body-s);
+    font-size: var(--size-font-body-s);
+    color: var(--color-cold-gray-900);
+}
+
+.button-comment .count {
+    margin-left: 4px;
+}

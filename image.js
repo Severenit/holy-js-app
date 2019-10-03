@@ -4,16 +4,18 @@ let fs = require('fs');
 let request = require('request');
 const shell = require('shelljs');
 
+
 const headers = new fetch.Headers();
 const baseUrl = 'https://api.figma.com';
 
-const fileKey = process.argv[2];
-const nodeId = process.argv[3];
-const version = process.argv[4];
+const fileKey = process.env.FILE_KEY;
+const nodeId = process.env.ICONS_NODE_ID;
 const devToken = process.env.DEV_TOKEN;
+const version = process.env.VERSION;
 
 const getNodeId = require('./lib/get-node-id');
 const naming = require('./lib/naming.js');
+const capitalize = require('./lib/capitalize.js');
 
 headers.append('X-Figma-Token', devToken);
 
@@ -24,10 +26,6 @@ let query = {
 		host: 'api.figma.com',
 		protocol: 'https',
 	},
-	prefixName: '$',
-	extension: 'scss',
-	separatorName: '-',
-	style_type: 'FILL,EFFECT,TEXT'
 };
 
 if (version) {
@@ -49,6 +47,7 @@ const download = function(uri, filename, callback) {
 
 const IconJSX = (name, className) => (`import React from 'react';
 import Icon from '../icon';
+import { ReactComponent as ${capitalize(name+'Components')} } from './${name}.svg';
 
 import './${name}.css'
 
@@ -60,14 +59,16 @@ export class ${className} extends React.Component {
 \t\t\t<Icon
 \t\t\t\t{ ...this.props }
 \t\t\t\tname='${name}'
-\t\t\t/>
+\t\t\t>
+\t\t\t\t<${capitalize(name+'Components')} />
+\t\t\t</Icon>
 \t\t);
 \t}
 }`);
 
 const IconCSS = (name) => (`
 .${name} {
-    background-image: url('./${name}.svg');
+    
 }
 `);
 
@@ -98,7 +99,7 @@ async function main() {
 			download(`${ images[item.id] }`, `${pathFolder}/${name}.svg`, function() {
 
 
-				fs.writeFile(`${pathFolder}/${ name }.jsx`, IconJSX(name, item.name.replace('/', '')), (err) => {
+				fs.writeFile(`${pathFolder}/${ name }.jsx`, IconJSX(name, `Icon${item.name.replace('/', '')}`), (err) => {
 					if (err) console.log(err);
 					shell.exec(`yarn prettier --write ${ pathFolder }/${ name }.jsx`);
 					console.log(`wrote ${pathFolder}/${ name }.jsx`);

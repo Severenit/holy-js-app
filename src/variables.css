@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 01 Oct 2019 09:02:13 GMT
+ * Generated on Wed, 02 Oct 2019 16:02:36 GMT
  */
 
 :root {
@@ -40,20 +40,19 @@
  --size-lineheight-h-3: 32px;
  --size-lineheight-h-2: 44px;
  --size-lineheight-input: 18.75px;
- --size-spacers-main-page-3-column: 1600px;
- --size-spacers-main-page-2-column: 1600px;
- --size-spacers-main-page-mobile-520: 1600px;
- --size-spacers-main-page-mobile-520-1: 1600px;
- --size-spacers-components: 1607px;
- --size-spacers-icons: 119px;
- --size-spacers-typography: 238px;
- --size-spacers-color-palette: 847px;
- --size-spacers-rectangle: 46px;
  --size-spacers-spacer-4: 4px;
  --size-spacers-spacer-8: 8px;
  --size-spacers-spacer-12: 12px;
  --size-spacers-spacer-16: 16px;
  --size-spacers-spacer-20: 20px;
+ --size-spacers-spacer-24: 24px;
+ --size-border-radius-button-like: 20px;
+ --size-border-radius-card-user: 4px;
+ --size-border-radius-label-long: 22px;
+ --size-border-radius-label-short: 22px;
+ --size-border-radius-search: 17px;
+ --size-border-radius-button: 4px;
+ --size-border-radius-card-base: 8px;
  --font-family-body-s: Trebuchet MS, TrebuchetMS;
  --font-family-body-m: Trebuchet MS, TrebuchetMS;
  --font-family-caps: Trebuchet MS, TrebuchetMS-Bold;

@@ -25,14 +25,16 @@ class Icon extends React.Component {
 	render(cn) {
 		const {
 			name,
-			size
+			size,
+			className
 		} = this.props;
-
 		return (
 			<span
-				className={ `icon ${name} icon_size_${size}` }
+				className={ `${className} icon ${name} icon_size_${size}` }
 				id={ this.props.id }
-			/>
+			>
+				{this.props.children}
+			</span>
 		);
 	}
 }

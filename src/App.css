@@ -59,7 +59,7 @@ body {
 .search-input-block input {
     width: 100%;
     background: var(--color-cold-gray-700);
-    border-radius: 17px;
+    border-radius: var(--size-border-radius-search);
     border: 1px solid rgba(0,0,0,0);
     height: 34px;
     padding: 0 14px;

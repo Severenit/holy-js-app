@@ -9,17 +9,13 @@ const getSpacers = require('./lib/get-spacers.js');
 const getBorderRadius = require('./lib/get-border-radius.js');
 
 const headers = new fetch.Headers();
-const devToken = process.env.DEV_TOKEN;
 
-const fileKey = process.argv[2];
-const type = process.argv[3];
-const spacerArg = process.argv[4];
-const borderRadiusId = process.argv[5];
+const devToken = process.env.DEV_TOKEN;
+const fileKey = process.env.FILE_KEY;
+const borderRadiusId = process.env.BORDER_RADIUS
+const spacersId = process.env.SPACERS;
+
 const version = process.argv[6];
-let spacersId;
-if (spacerArg && spacerArg.indexOf('spacers') !== -1) {
-	spacersId = spacerArg.slice(spacerArg.indexOf('=')+1, spacerArg.length);
-}
 
 headers.append('X-Figma-Token', devToken);
 
@@ -49,7 +45,7 @@ async function main() {
 
 	let result = style;
 
-	if (spacersId && type === 'files') {
+	if (spacersId) {
 		const spacers = await getSpacers(spacersId, fileKey, query.url);
 		result = {
 			...style,

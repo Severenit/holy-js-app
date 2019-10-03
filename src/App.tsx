@@ -4,47 +4,71 @@ import './App.css';
 import logo from './assets/logo.png';
 import {Card} from './components/card/card';
 import {Menu} from './components/menu/menu';
-import {Chart} from './icons';
+import {IconChart} from './icons';
 
 const CARD_DATA = [
     {
         id: 1,
         title: 'To the Moon',
+        type: 'short',
+        currency: 'ETHUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 2,
         title: 'End of Ethereum',
+        type: 'long',
+        currency: 'BTCUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 3,
         title: 'To the Moon',
+        type: 'long',
+        currency: 'BTCUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 4,
         title: 'End of Ethereum',
+        type: 'short',
+        currency: 'ETHUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 5,
         title: 'To the Moon',
+        type: 'short',
+        currency: 'ETHUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 6,
         title: 'End of Ethereum',
+        type: 'long',
+        currency: 'BTCUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 7,
         title: 'To the Moon',
+        type: 'short',
+        currency: 'ETHUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     },
     {
         id: 8,
         title: 'End of Ethereum',
+        type: 'long',
+        currency: 'BTCUSD,',
+        currencyPrice: 60,
         description: 'Hey traders, I was paying close attention to ETHUSD for a while as it started approaching a significant level of resistance. Finally on a daily RSI shows us clear divergence and very nice dodji.'
     }
 ]
@@ -73,7 +97,7 @@ const MENU_DATA = [
     {
         id: 6,
         name: 'Chart',
-        icons: <Chart/>
+        icons: <IconChart/>
     },
     {
         id: 7,
@@ -115,7 +139,7 @@ const App: React.FC = () => {
                   </h1>
                   <div className="grids-3-colums">
                       {
-                          CARD_DATA.map(item => <Card key={item.id} title={item.title} description={item.description}/>)
+                          CARD_DATA.map(item => <Card key={item.id} type={item.type} currency={item.currency} currencyPrice={item.currencyPrice} title={item.title} description={item.description}/>)
                       }
                   </div>
               </div>

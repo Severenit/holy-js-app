@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 01 Oct 2019 09:02:13 GMT
+ * Generated on Wed, 02 Oct 2019 16:02:36 GMT
  */
 
 export const ColorColdGray900 = "#131722";
@@ -39,20 +39,19 @@ export const SizeLineheightCaps = "21rem";
 export const SizeLineheightH3 = "32rem";
 export const SizeLineheightH2 = "44rem";
 export const SizeLineheightInput = "18.75rem";
-export const SizeSpacersMainPage3Column = "1600rem";
-export const SizeSpacersMainPage2Column = "1600rem";
-export const SizeSpacersMainPageMobile520 = "1600rem";
-export const SizeSpacersMainPageMobile5201 = "1600rem";
-export const SizeSpacersComponents = "1607rem";
-export const SizeSpacersIcons = "119rem";
-export const SizeSpacersTypography = "238rem";
-export const SizeSpacersColorPalette = "847rem";
-export const SizeSpacersRectangle = "46rem";
 export const SizeSpacersSpacer4 = "4rem";
 export const SizeSpacersSpacer8 = "8rem";
 export const SizeSpacersSpacer12 = "12rem";
 export const SizeSpacersSpacer16 = "16rem";
 export const SizeSpacersSpacer20 = "20rem";
+export const SizeSpacersSpacer24 = "24rem";
+export const SizeBorderRadiusButtonLike = "20rem";
+export const SizeBorderRadiusCardUser = "4rem";
+export const SizeBorderRadiusLabelLong = "22rem";
+export const SizeBorderRadiusLabelShort = "22rem";
+export const SizeBorderRadiusSearch = "17rem";
+export const SizeBorderRadiusButton = "4rem";
+export const SizeBorderRadiusCardBase = "8rem";
 export const FontFamilyBodyS = "Trebuchet MS, TrebuchetMS";
 export const FontFamilyBodyM = "Trebuchet MS, TrebuchetMS";
 export const FontFamilyCaps = "Trebuchet MS, TrebuchetMS-Bold";

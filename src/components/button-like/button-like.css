@@ -1,0 +1,20 @@
+.button-like {
+    cursor: pointer;
+    border-radius: var(--size-border-radius-button-like);
+    padding: 0 15px;
+    height: 36px;
+    border: 1px solid var(--color-cold-gray-150);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-body-s);
+    font-weight: var(--font-weight-body-s);
+    letter-spacing: var(--font-spacing-body-s);
+    line-height: var(--size-lineheight-body-s);
+    font-size: var(--size-font-body-s);
+    color: var(--color-cold-gray-900);
+}
+
+.button-like .count {
+    margin-left: 4px;
+}
