@@ -7,8 +7,8 @@
     "@types/node": "12.7.8",
     "@types/react": "16.9.3",
     "@types/react-dom": "16.9.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
     "react-scripts": "3.1.2",
     "typescript": "3.6.3"
   },
@@ -36,12 +36,12 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.1.0",
-    "json-to-css": "^0.1.0",
-    "node-fetch": "^2.6.0",
-    "prettier": "^1.18.2",
-    "qs": "^6.9.0",
-    "shelljs": "^0.8.3",
-    "style-dictionary": "^2.8.2"
+    "dotenv": "8.1.0",
+    "json-to-css": "0.1.0",
+    "node-fetch": "2.6.0",
+    "prettier": "1.18.2",
+    "qs": "6.9.0",
+    "shelljs": "0.8.3",
+    "style-dictionary": "2.8.2"
   }
 }
