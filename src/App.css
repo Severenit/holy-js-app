@@ -20,7 +20,7 @@ body {
     grid-template-columns: auto 1fr auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header-grids {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -55,7 +55,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logo svg .logo-string,
     .search-input-block {
         display: none;
@@ -128,7 +128,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grids-3-colums {
         grid-template-columns: repeat(var(--grids-card-count), 1fr);
         grid-column-gap: var(--size-grids-card-gutter);
