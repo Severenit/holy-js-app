@@ -12,18 +12,18 @@
     background-color: var(--color-absolute-white);
     border-radius: var(--size-border-radius-card-base);
     box-shadow: var(--effects-card-shadow);
-    margin-bottom: var(--size-spacers-spacer-20);
-    padding: var(--size-spacers-spacer-20) 0;
+    margin-bottom: var(--size-spacers-spacer-500);
+    padding: var(--size-spacers-spacer-500) 0;
 }
 
 .card .title {
-    margin: 0 0 var(--size-spacers-spacer-8);
+    margin: 0 0 var(--size-spacers-spacer-200);
     padding: 0;
-    font-family: var(--font-family-h-3);
-    font-weight: var(--font-weight-h-3);
-    letter-spacing: var(--font-spacing-h-3);
-    line-height: var(--size-lineheight-h-3);
-    font-size: var(--size-font-h-3);
+    font-family: var(--font-family-text-300);
+    font-weight: var(--font-weight-text-300);
+    letter-spacing: var(--font-spacing-text-300);
+    line-height: var(--size-lineheight-text-300);
+    font-size: var(--size-font-text-300);
 }
 
 .card .picture {
@@ -32,7 +32,7 @@
     background: var(--color-absolute-white);
     width: 100%;
     overflow: hidden;
-    margin-bottom: var(--size-spacers-spacer-12);
+    margin-bottom: var(--size-spacers-spacer-300);
 }
 
 .card .picture img {
@@ -40,43 +40,43 @@
 }
 
 .card .paragraph {
-    font-family: var(--font-family-body-m);
-    font-weight: var(--font-weight-body-m);
-    letter-spacing: var(--font-spacing-body-m);
-    line-height: var(--size-lineheight-body-m);
-    font-size: var(--size-font-body-m);
-    margin-bottom: var(--size-spacers-spacer-20);
+    font-family: var(--font-family-text-200);
+    font-weight: var(--font-weight-text-200);
+    letter-spacing: var(--font-spacing-text-200);
+    line-height: var(--size-lineheight-text-200);
+    font-size: var(--size-font-text-200);
+    margin-bottom: var(--size-spacers-spacer-500);
 }
 
 .card .price-info {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: var(--size-spacers-spacer-20);
+    margin-bottom: var(--size-spacers-spacer-500);
 }
 
 .card .price-info .currency {
     color: var(--color-cold-gray-900);
-    font-family: var(--font-family-body-m);
-    font-weight: var(--font-weight-body-m);
-    letter-spacing: var(--font-spacing-body-m);
-    line-height: var(--size-lineheight-body-m);
-    font-size: var(--size-font-body-m);
+    font-family: var(--font-family-text-200);
+    font-weight: var(--font-weight-text-200);
+    letter-spacing: var(--font-spacing-text-200);
+    line-height: var(--size-lineheight-text-200);
+    font-size: var(--size-font-text-200);
     margin-left: 12px;
     margin-right: 5px;
 }
 
 .card .price-info .currencyPrice {
     color: var(--color-cold-gray-500);
-    font-family: var(--font-family-body-m);
-    font-weight: var(--font-weight-body-m);
-    letter-spacing: var(--font-spacing-body-m);
-    line-height: var(--size-lineheight-body-m);
-    font-size: var(--size-font-body-m);
+    font-family: var(--font-family-text-200);
+    font-weight: var(--font-weight-text-200);
+    letter-spacing: var(--font-spacing-text-200);
+    line-height: var(--size-lineheight-text-200);
+    font-size: var(--size-font-text-200);
 }
 
 .card .user-info {
-    margin-bottom: var(--size-spacers-spacer-12);
+    margin-bottom: var(--size-spacers-spacer-300);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,11 +84,11 @@
 
 .card .user-info .viewrs-info {
     color: var(--color-cold-gray-500);
-    font-family: var(--font-family-body-s);
-    font-weight: var(--font-weight-body-s);
-    letter-spacing: var(--font-spacing-body-s);
-    line-height: var(--size-lineheight-body-s);
-    font-size: var(--size-font-body-s);
+    font-family: var(--font-family-text-100);
+    font-weight: var(--font-weight-text-100);
+    letter-spacing: var(--font-spacing-text-100);
+    line-height: var(--size-lineheight-text-100);
+    font-size: var(--size-font-text-100);
 }
 
 .card .footer {

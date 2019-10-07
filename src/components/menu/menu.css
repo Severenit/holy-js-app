@@ -19,11 +19,11 @@
 .menu li a {
     text-decoration: none;
     color: var(--color-cold-gray-100);
-    font-family: var(--font-family-body-m);
-    font-weight: var(--font-weight-body-m);
-    letter-spacing: var(--font-spacing-body-m);
-    line-height: var(--size-lineheight-body-m);
-    font-size: var(--size-font-body-m);
+    font-family: var(--font-family-text-200);
+    font-weight: var(--font-weight-text-200);
+    letter-spacing: var(--font-spacing-text-200);
+    line-height: var(--size-lineheight-text-200);
+    font-size: var(--size-font-text-200);
 }
 
 .menu li a path {

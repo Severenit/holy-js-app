@@ -7,10 +7,10 @@
     padding: 0 7px 0 1px;
     border-radius: var(--size-border-radius-label-short);
     background-color: var(--color-ripe-red-500);
-    font-family: var(--font-family-caps);
-    font-weight: var(--font-weight-caps);
-    font-size: var(--size-font-caps);
-    line-height: var(--size-lineheight-caps);
+    font-family: var(--font-family-textbold-50);
+    font-weight: var(--font-weight-textbold-50);
+    font-size: var(--size-font-textbold-50);
+    line-height: var(--size-lineheight-textbold-50);
     color: var(--color-absolute-white);
     text-transform: uppercase;
 }

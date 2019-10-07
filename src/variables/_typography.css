@@ -1,23 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Mon, 07 Oct 2019 10:53:07 GMT
+ * Generated on Mon, 07 Oct 2019 14:30:07 GMT
  */
 
 :root {
- --color-cold-gray-900: #131722;
- --color-cold-gray-150: #e0e3eb;
- --color-cold-gray-500: #787b86;
- --color-absolute-white: #ffffff;
- --color-minty-green-500: #009688;
- --color-purple-notes: #d828dc;
- --color-ripe-red-500: #f44336;
- --color-cold-gray-100: #f0f3fa;
- --color-cold-gray-800: #2a2e39;
- --color-brand-color: #2196f3;
- --color-cold-gray-700: #434651;
- --color-cold-gray-300: #b2b5be;
- --color-cold-gray-200: #d1d4dc;
- --color-brand-color-hover: #1976d2;
  --size-font-text-100: 14px;
  --size-font-text-200: 16px;
  --size-font-textbold-50: 11px;
@@ -26,14 +12,6 @@
  --size-font-input: 16px;
  --size-font-text-300: 24px;
  --size-font-text-50: 11px;
- --size-grids-card-gutter: 20px;
- --size-grids-card-offset: 20px;
- --size-grids-desktop-1024-gutter: 100px;
- --size-grids-desktop-1024-offset: 0px;
- --size-grids-tablet-768-gutter: 20px;
- --size-grids-tablet-768-offset: 0px;
- --size-grids-mobile-gutter: 20px;
- --size-grids-mobile-offset: 20px;
  --size-lineheight-text-100: 21px;
  --size-lineheight-text-200: 24px;
  --size-lineheight-textbold-50: 21px;
@@ -42,19 +20,6 @@
  --size-lineheight-input: 18.75px;
  --size-lineheight-text-300: 32px;
  --size-lineheight-text-50: 21px;
- --size-spacers-spacer-600: 24px;
- --size-spacers-spacer-500: 20px;
- --size-spacers-spacer-400: 16px;
- --size-spacers-spacer-300: 12px;
- --size-spacers-spacer-200: 8px;
- --size-spacers-spacer-100: 4px;
- --size-border-radius-button-like: 20px;
- --size-border-radius-card-user: 4px;
- --size-border-radius-label-long: 22px;
- --size-border-radius-label-short: 22px;
- --size-border-radius-search: 17px;
- --size-border-radius-join-button: 4px;
- --size-border-radius-card-base: 8px;
  --font-family-text-100: Trebuchet MS, TrebuchetMS;
  --font-family-text-200: Trebuchet MS, TrebuchetMS;
  --font-family-textbold-50: Trebuchet MS, TrebuchetMS-Bold;
@@ -79,9 +44,4 @@
  --font-spacing-input: normal;
  --font-spacing-text-300: normal;
  --font-spacing-text-50: normal;
- --grids-card-count: 1;
- --grids-desktop-1024-count: 2;
- --grids-tablet-768-count: 2;
- --grids-mobile-count: 1;
- --effects-card-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11999999731779099);
 }

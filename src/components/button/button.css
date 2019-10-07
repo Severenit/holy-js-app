@@ -4,15 +4,15 @@
     cursor: pointer;
     outline: none;
     background-color: var(--color-brand-color);
-    border-radius: var(--size-border-radius-button);
+    border-radius: var(--size-border-radius-join-button);
     border: 1px solid var(--color-brand-color);
     justify-content: center;
     align-items: center;
     padding: 0 16px;
     color: var(--color-absolute-white);
-    font-family: var(--font-family-body-m);
-    font-weight: var(--font-weight-body-m);
-    letter-spacing: var(--font-spacing-body-m);
-    line-height: var(--size-lineheight-body-m);
-    font-size: var(--size-font-body-s);
+    font-family: var(--font-family-text-200);
+    font-weight: var(--font-weight-text-200);
+    letter-spacing: var(--font-spacing-text-200);
+    line-height: var(--size-lineheight-text-200);
+    font-size: var(--size-font-text-100);
 }

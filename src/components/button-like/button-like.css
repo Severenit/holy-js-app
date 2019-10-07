@@ -7,11 +7,11 @@
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-    font-family: var(--font-family-body-s);
-    font-weight: var(--font-weight-body-s);
-    letter-spacing: var(--font-spacing-body-s);
-    line-height: var(--size-lineheight-body-s);
-    font-size: var(--size-font-body-s);
+    font-family: var(--font-family-text-100);
+    font-weight: var(--font-weight-text-100);
+    letter-spacing: var(--font-spacing-text-100);
+    line-height: var(--size-lineheight-text-100);
+    font-size: var(--size-font-text-100);
     color: var(--color-cold-gray-900);
 }
 

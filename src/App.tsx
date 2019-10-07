@@ -109,6 +109,9 @@ const MENU_DATA = [
 const App: React.FC = () => {
   return (
       <div>
+          <div className='theme' onClick={() => changeTheme()}>
+              CHANGE THEME
+          </div>
           <header>
               <div className='header-top'>
                   <div className="layout">
@@ -148,6 +151,19 @@ const App: React.FC = () => {
           </section>
       </div>
   );
+}
+
+function changeTheme() {
+    const theme = window.localStorage.getItem('theme');
+    if (theme && theme === 'light') {
+        window.localStorage.setItem('theme', 'dark');
+        document.body.className = document.body.className.replace("theme-light","");
+        document.body.classList.add("theme-dark");
+    } else {
+        window.localStorage.setItem('theme', 'light');
+        document.body.className = document.body.className.replace("theme-dark","");
+        document.body.classList.add("theme-light");
+    }
 }
 
 export default App;
