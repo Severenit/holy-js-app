@@ -44,7 +44,7 @@ export class Card extends React.PureComponent<Props> {
                         </span>
                     </div>
                     <div className="picture">
-                        <img src={screen} />
+                        <img src={screen} alt="screenshot"/>
                     </div>
                     <div className="user-info">
                         <CardUser name="User"/>

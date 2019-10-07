@@ -22,7 +22,7 @@ export class Menu extends React.PureComponent<Props> {
                 {
                     items.map(item => (
                         <li key={item.id}>
-                            <a href="#">
+                            <a href="/">
                                 {item.icons}
                                 {item.icons ? ' ' : null}
                                 {item.name}

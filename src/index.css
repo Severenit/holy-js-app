@@ -1,4 +1,4 @@
-@import "var.css";
+@import "variables.css";
 
 *, :after, :before {
     box-sizing: border-box;

@@ -109,6 +109,9 @@ const MENU_DATA = [
 const App: React.FC = () => {
   return (
       <div>
+          <div className='grids' onClick={() => changeGrids()}>
+              CHANGE GRIDS
+          </div>
           <div className='theme' onClick={() => changeTheme()}>
               CHANGE THEME
           </div>
@@ -123,7 +126,7 @@ const App: React.FC = () => {
                               <input type="text" placeholder="Search"/>
                           </div>
                           <div className="button">
-                              <a href="#" className="link">
+                              <a href="/" className="link">
                                   Sign in
                               </a>
                               <Button>Join for free</Button>
@@ -153,16 +156,27 @@ const App: React.FC = () => {
   );
 }
 
+function changeGrids() {
+    const theme = window.localStorage.getItem('grids');
+    if (theme && theme === 'true') {
+        window.localStorage.setItem('grids', 'false');
+        document.body.className = document.body.className.replace("theme-grids-desktop","");
+    } else {
+        window.localStorage.setItem('grids', 'true');
+        document.body.classList.add("theme-grids-desktop");
+    }
+}
+
 function changeTheme() {
     const theme = window.localStorage.getItem('theme');
     if (theme && theme === 'light') {
         window.localStorage.setItem('theme', 'dark');
-        document.body.className = document.body.className.replace("theme-light","");
-        document.body.classList.add("theme-dark");
+        document.body.className = document.body.className.replace("theme-colors-light","");
+        document.body.classList.add("theme-colors-dark");
     } else {
         window.localStorage.setItem('theme', 'light');
-        document.body.className = document.body.className.replace("theme-dark","");
-        document.body.classList.add("theme-light");
+        document.body.className = document.body.className.replace("theme-colors-dark","");
+        document.body.classList.add("theme-colors-light");
     }
 }
 
