@@ -54,6 +54,7 @@ body {
     height: 54px;
 }
 
+
 @media screen and (max-width: 768px) {
     .logo svg .logo-string,
     .search-input-block {
