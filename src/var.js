@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 07 Oct 2019 09:14:44 GMT
+ * Generated on Mon, 07 Oct 2019 09:58:17 GMT
  */
 
 export const ColorColdGray900 = "#131722";
@@ -27,12 +27,12 @@ export const SizeFontH2 = "36rem";
 export const SizeFontInput = "16rem";
 export const SizeGridsCardGutter = "20rem";
 export const SizeGridsCardOffset = "20rem";
-export const SizeGridsWeb3ColumnGutter = "20rem";
-export const SizeGridsWeb3ColumnOffset = "0rem";
-export const SizeGridsWeb2ColumnGutter = "20rem";
-export const SizeGridsWeb2ColumnOffset = "0rem";
-export const SizeGrids1ColumnGutter = "20rem";
-export const SizeGrids1ColumnOffset = "20rem";
+export const SizeGridsDesktop1024Gutter = "20rem";
+export const SizeGridsDesktop1024Offset = "0rem";
+export const SizeGridsTablet768Gutter = "20rem";
+export const SizeGridsTablet768Offset = "0rem";
+export const SizeGridsMobileGutter = "20rem";
+export const SizeGridsMobileOffset = "20rem";
 export const SizeLineheightBodyS = "21rem";
 export const SizeLineheightBodyM = "24rem";
 export const SizeLineheightCaps = "21rem";
@@ -50,7 +50,7 @@ export const SizeBorderRadiusCardUser = "4rem";
 export const SizeBorderRadiusLabelLong = "22rem";
 export const SizeBorderRadiusLabelShort = "22rem";
 export const SizeBorderRadiusSearch = "17rem";
-export const SizeBorderRadiusButton = "4rem";
+export const SizeBorderRadiusJoinButton = "4rem";
 export const SizeBorderRadiusCardBase = "8rem";
 export const FontFamilyBodyS = "Trebuchet MS, TrebuchetMS";
 export const FontFamilyBodyM = "Trebuchet MS, TrebuchetMS";
@@ -71,7 +71,7 @@ export const FontSpacingH3 = "normal";
 export const FontSpacingH2 = "normal";
 export const FontSpacingInput = "normal";
 export const GridsCardCount = 1;
-export const GridsWeb3ColumnCount = 3;
-export const GridsWeb2ColumnCount = 2;
-export const Grids1ColumnCount = 1;
+export const GridsDesktop1024Count = 3;
+export const GridsTablet768Count = 2;
+export const GridsMobileCount = 1;
 export const EffectsCardShadow = "0px 4px 6px rgba(0, 0, 0, 0.11999999731779099)";
