@@ -30,10 +30,13 @@
     border-radius: 4px;
     border: 1px solid var(--color-cold-gray-150);
     background: var(--color-absolute-white);
-    height: 254px;
     width: 100%;
     overflow: hidden;
     margin-bottom: var(--size-spacers-spacer-12);
+}
+
+.card .picture img {
+    width: 100%;
 }
 
 .card .paragraph {

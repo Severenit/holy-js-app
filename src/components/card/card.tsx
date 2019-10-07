@@ -8,6 +8,8 @@ import {ButtonLike} from '../button-like/button-like';
 import {IconBookmark, IconShare} from '../../icons';
 import {ButtonComment} from '../button-comment/button-comment';
 
+import screen from './screen.png'
+
 type Props = {
     title: string,
     type: string,
@@ -42,7 +44,7 @@ export class Card extends React.PureComponent<Props> {
                         </span>
                     </div>
                     <div className="picture">
-
+                        <img src={screen} />
                     </div>
                     <div className="user-info">
                         <CardUser name="User"/>

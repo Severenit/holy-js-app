@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 02 Oct 2019 16:02:36 GMT
+ * Generated on Mon, 07 Oct 2019 09:14:44 GMT
  */
 
 export const ColorColdGray900 = "#131722";
