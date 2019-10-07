@@ -17,6 +17,7 @@
 }
 
 .card .title {
+    color: var(--color-cold-gray-900);
     margin: 0 0 var(--size-spacers-spacer-200);
     padding: 0;
     font-family: var(--font-family-text-300);
@@ -40,6 +41,7 @@
 }
 
 .card .paragraph {
+    color: var(--color-cold-gray-900);
     font-family: var(--font-family-text-200);
     font-weight: var(--font-weight-text-200);
     letter-spacing: var(--font-spacing-text-200);
@@ -102,4 +104,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card svg path {
+    stroke: var(--color-cold-gray-900);
 }

@@ -3,6 +3,7 @@ body {
 }
 .theme,
 .grids {
+    color: var(--color-cold-gray-900);
     position: fixed;
     z-index: 10000;
     background-color: var(--color-absolute-white);
@@ -116,6 +117,7 @@ body {
 .heading {
     margin: 0 0 24px;
     padding: 0;
+    color: var(--color-cold-gray-900);
     font-family: var(--font-family-text-400);
     font-weight: var(--font-weight-text-400);
     letter-spacing: var(--font-spacing-text-400);
