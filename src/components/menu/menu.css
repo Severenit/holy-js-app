@@ -9,6 +9,7 @@
 .menu li {
     list-style: none;
     margin-right: 40px;
+    white-space: nowrap;
 }
 
 .menu li:last-child {
@@ -27,4 +28,11 @@
 
 .menu li a path {
     fill: var(--color-cold-gray-100);
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        overflow-y: scroll;
+        max-width: 100%;
+    }
 }

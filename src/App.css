@@ -120,7 +120,7 @@ body {
     justify-items: stretch;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1023px) {
     .grids-3-colums {
         grid-template-columns: repeat(var(--grids-web-2-column-count), 1fr);
         grid-column-gap: var(--size-grids-web-2-column-gutter);
