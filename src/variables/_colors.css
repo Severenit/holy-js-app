@@ -1,21 +1,21 @@
 /**
  * Do not edit directly
- * Generated on Mon, 07 Oct 2019 20:04:08 GMT
+ * Generated on Wed, 09 Oct 2019 09:54:25 GMT
  */
 
 :root {
-    --color-cold-gray-000: #ffffff;
-    --color-cold-gray-100: #f0f3fa;
-    --color-cold-gray-150: #e0e3eb;
-    --color-cold-gray-200: #d1d4dc;
-    --color-cold-gray-300: #b2b5be;
-    --color-cold-gray-800: #2a2e39;
-    --color-cold-gray-700: #434651;
-    --color-cold-gray-900: #131722;
-    --color-cold-gray-500: #787b86;
-    --color-minty-green-500: #009688;
-    --color-purple-notes: #d828dc;
-    --color-ripe-red-500: #f44336;
-    --color-brand-color: #2196f3;
-    --color-brand-color-hover: #1976d2;
+ --color-cold-gray-000: #ffffff;
+ --color-cold-gray-900: #131722;
+ --color-cold-gray-150: #e0e3eb;
+ --color-cold-gray-500: #787b86;
+ --color-minty-green-500: #009688;
+ --color-purple-notes: #d828dc;
+ --color-ripe-red-500: #f44336;
+ --color-cold-gray-100: #f0f3fa;
+ --color-cold-gray-800: #2a2e39;
+ --color-brand-color: #2196f3;
+ --color-cold-gray-700: #434651;
+ --color-cold-gray-300: #b2b5be;
+ --color-cold-gray-200: #d1d4dc;
+ --color-brand-color-hover: #1976d2;
 }

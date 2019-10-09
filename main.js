@@ -1,15 +1,20 @@
+const styleType = process.argv[2] || null;
+const prefixNameStyle = process.argv[3] || null;
+
 const fs = require('fs');
 const dotenv = require('dotenv')
 const dotenvOptions = {}
-if (process.argv[2]) {
-	dotenvOptions.path = `.env.${process.argv[2]}`;
+
+if (prefixNameStyle) {
+	dotenvOptions.path = `.env.${prefixNameStyle}`;
 }
 dotenv.config(dotenvOptions)
 const fetch = require('node-fetch');
 const shell = require('shelljs');
 
 const generateConfig = require('./lib/generate-config')
-const StyleDictionary = require('style-dictionary').extend(generateConfig({prefix: process.argv[2], type: process.argv[3]}));
+const StyleDictionary = require('style-dictionary').extend(generateConfig({prefix: prefixNameStyle, type: styleType}));
+
 StyleDictionary.registerFormat({
 	name: 'my/theme',
 	formatter: function(dictionary) {
@@ -20,7 +25,7 @@ StyleDictionary.registerFormat({
 				acc += '}'
 			}
 			return acc;
-		}, `.theme-${process.argv[3]}-${process.argv[2]} {\n`)
+		}, `.theme-${styleType}-${prefixNameStyle} {\n`)
 	}
 })
 
@@ -35,6 +40,9 @@ const fileKey = process.env.FILE_KEY;
 const borderRadiusId = process.env.BORDER_RADIUS
 const spacersId = process.env.SPACERS;
 const version = process.argv[6];
+
+console.log('####: styleType', styleType);
+console.log('####: fileKey', fileKey);
 
 headers.append('X-Figma-Token', devToken);
 
@@ -56,7 +64,7 @@ if (version) {
 
 async function main() {
 	console.log('> We start, please wait...');
-	const style = await getStylesArtboard(fileKey, query.url);
+	const style = await getStylesArtboard(fileKey, query.url, styleType);
 
 	let result = style;
 

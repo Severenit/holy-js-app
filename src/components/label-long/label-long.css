@@ -19,6 +19,6 @@
     margin-right: -2px;
 }
 
-.icon-label-long path {
-    stroke: var(--color-cold-gray-000);
+.icon-label-long > svg > path {
+    stroke: var(--color-cold-gray-000) !important;
 }
