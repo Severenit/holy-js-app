@@ -11,7 +11,7 @@
     font-weight: var(--font-weight-textbold-50);
     font-size: var(--size-font-textbold-50);
     line-height: var(--size-lineheight-textbold-50);
-    color: var(--color-absolute-white);
+    color: var(--color-cold-gray-000);
     text-transform: uppercase;
 }
 
@@ -20,5 +20,5 @@
 }
 
 .icon-label-long path {
-    stroke: var(--color-absolute-white);
+    stroke: var(--color-cold-gray-000);
 }

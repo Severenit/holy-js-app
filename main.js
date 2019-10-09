@@ -1,10 +1,15 @@
-require('dotenv').config()
-const fetch = require('node-fetch');
 const fs = require('fs');
+const dotenv = require('dotenv')
+const dotenvOptions = {}
+if (process.argv[2]) {
+	dotenvOptions.path = `.env.${process.argv[2]}`;
+}
+dotenv.config(dotenvOptions)
+const fetch = require('node-fetch');
 const shell = require('shelljs');
+
 const generateConfig = require('./lib/generate-config')
 const StyleDictionary = require('style-dictionary').extend(generateConfig({prefix: process.argv[2], type: process.argv[3]}));
-
 StyleDictionary.registerFormat({
 	name: 'my/theme',
 	formatter: function(dictionary) {
@@ -51,11 +56,7 @@ if (version) {
 
 async function main() {
 	console.log('> We start, please wait...');
-	// await getImage(fileKey, nodeIdImage);
-	// console.log('> Image is Start!!!');
 	const style = await getStylesArtboard(fileKey, query.url);
-
-	
 
 	let result = style;
 

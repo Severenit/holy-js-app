@@ -9,7 +9,7 @@
 }
 
 .card {
-    background-color: var(--color-absolute-white);
+    background-color: var(--color-cold-gray-000);
     border-radius: var(--size-border-radius-card-base);
     box-shadow: var(--effects-card-shadow);
     margin-bottom: var(--size-spacers-spacer-500);
@@ -30,7 +30,7 @@
 .card .picture {
     border-radius: 4px;
     border: 1px solid var(--color-cold-gray-150);
-    background: var(--color-absolute-white);
+    background: var(--color-cold-gray-000);
     width: 100%;
     overflow: hidden;
     margin-bottom: var(--size-spacers-spacer-300);

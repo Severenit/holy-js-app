@@ -1,4 +1,8 @@
+@import "../../variables/_colors.css";
+
 .menu {
+    --color-cold-gray-100: #f0f3fa;
+
     margin: 0;
     display: flex;
     justify-content: flex-start;
@@ -6,10 +10,12 @@
     height: 54px;
     padding: 0;
 }
+
 .menu li {
     list-style: none;
     margin-right: 40px;
     white-space: nowrap;
+
 }
 
 .menu li:last-child {

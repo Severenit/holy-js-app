@@ -10,5 +10,3 @@ const nodeId = process.argv[3];
 
 const getFiles = source => fs.readdirSync(source);
 const indexCss = getFiles('./src/variables/').map(item => `@import 'variables/${item}';\n`).join('');
-
-console.log('####: g', indexCss);

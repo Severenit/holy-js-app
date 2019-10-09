@@ -1,11 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import { ReactComponent as Logo } from "./assets/Logo.svg";
 import {Card} from './components/card/card';
-import {Menu} from './components/menu/menu';
-import {IconChart} from './icons';
-import {Button} from './components/button/button';
+import {Headers} from './components/headers/headers';
 
 const CARD_DATA = [
     {
@@ -74,86 +71,32 @@ const CARD_DATA = [
     }
 ]
 
-const MENU_DATA = [
-    {
-        id: 1,
-        name: 'Ideas'
-    },
-    {
-        id: 2,
-        name: 'Markets'
-    },
-    {
-        id: 3,
-        name: 'Scripts'
-    },
-    {
-        id: 4,
-        name: 'Screener'
-    },
-    {
-        id: 5,
-        name: 'Shows'
-    },
-    {
-        id: 6,
-        name: 'Chart',
-        icons: <IconChart/>
-    },
-    {
-        id: 7,
-        name: 'More'
-    }
-]
-
 const App: React.FC = () => {
-  return (
-      <div>
-          <div className='grids' onClick={() => changeGrids()}>
-              CHANGE GRIDS
-          </div>
-          <div className='theme' onClick={() => changeTheme()}>
-              CHANGE THEME
-          </div>
-          <header>
-              <div className='header-top'>
-                  <div className="layout">
-                      <div className="header-grids">
-                          <div className="logo">
-                              <Logo/>
-                          </div>
-                          <div className="search-input-block">
-                              <input type="text" placeholder="Search"/>
-                          </div>
-                          <div className="button">
-                              <a href="/" className="link">
-                                  Sign in
-                              </a>
-                              <Button>Join for free</Button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div className='header-bottom'>
-                  <div className="layout">
-                      <Menu items={MENU_DATA} />
-                  </div>
-              </div>
-          </header>
-          <section className='body'>
-              <div className="layout">
-                  <h1 className="heading">
-                      Trading ideas
-                  </h1>
-                  <div className="grids-3-colums">
-                      {
-                          CARD_DATA.map(item => <Card key={item.id} type={item.type} currency={item.currency} currencyPrice={item.currencyPrice} title={item.title} description={item.description}/>)
-                      }
-                  </div>
-              </div>
-          </section>
-      </div>
-  );
+    return (
+        <div>
+            <div className="grids" onClick={() => changeGrids()}>
+                CHANGE GRIDS
+            </div>
+            <div className="theme" onClick={() => changeTheme()}>
+                CHANGE THEME
+            </div>
+            <Headers/>
+            <section className="body">
+                <div className="layout">
+                    <h1 className="heading">
+                        Trading ideas
+                    </h1>
+                    <div className="grids-3-colums">
+                        {
+                            CARD_DATA.map(item => <Card key={item.id} type={item.type} currency={item.currency}
+                                                        currencyPrice={item.currencyPrice} title={item.title}
+                                                        description={item.description}/>)
+                        }
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
 }
 
 function changeGrids() {
