@@ -31,6 +31,12 @@ body {
     padding: 0 30px;
 }
 
+@media screen and (max-width: 767px) {
+    .layout {
+        padding: 0 15px;
+    }
+}
+
 .body {
     padding-top: 38px;
     padding-bottom: 24px;

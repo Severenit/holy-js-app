@@ -1,7 +1,9 @@
+@import "../../variables/_colors.css";
 header {
     --color-cold-gray-000: #ffffff;
     --color-cold-gray-700: #434651;
     --color-cold-gray-800: #2a2e39;
+    //--color-gray-800: var(--color-cold-gray-800);
     --color-cold-gray-900: #131722;
     --color-cold-gray-300: #b2b5be;
 }
@@ -26,7 +28,7 @@ header {
 @media screen and (max-width: 767px) {
     .header-grids {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
     }
 }
 
@@ -44,6 +46,13 @@ header {
     height: 54px;
 }
 
+.logo .logo-big {
+    display: inline-block;
+}
+
+.logo .logo-small {
+    display: none;
+}
 
 .link {
     text-decoration: none;
@@ -71,7 +80,10 @@ header {
 
 
 @media screen and (max-width: 767px) {
-    .logo svg .logo-string,
+    .logo .logo-small {
+        display: inline-block;
+    }
+    .logo .logo-big,
     .search-input-block {
         display: none;
     }

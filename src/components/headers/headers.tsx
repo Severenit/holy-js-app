@@ -1,7 +1,8 @@
 import React, {ReactElement} from 'react';
 
 import './headers.css';
-import {ReactComponent as Logo} from '../../assets/Logo.svg';
+import {ReactComponent as LogoBig} from './assets/logo-big.svg';
+import {ReactComponent as LogoSmall} from './assets/logo-small.svg';
 import {Button} from '../button/button';
 import {Menu} from '../menu/menu';
 import {IconChart} from '../../icons';
@@ -48,7 +49,12 @@ export class Headers extends React.PureComponent<Props> {
                     <div className="layout">
                         <div className="header-grids">
                             <div className="logo">
-                                <Logo/>
+                                <span className="logo-big">
+                                    <LogoBig/>
+                                </span>
+                                <span className="logo-small">
+                                    <LogoSmall/>
+                                </span>
                             </div>
                             <div className="search-input-block">
                                 <input type="text" placeholder="Search"/>
