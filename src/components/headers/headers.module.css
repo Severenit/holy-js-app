@@ -108,11 +108,14 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.changeTheme {
+.changeTheme,
+.changeGrids {
     cursor: pointer;
+    margin-left: 12px;
 }
 
+.changeGrids svg circle,
+.changeGrids svg path,
 .changeTheme svg circle,
 .changeTheme svg path {
     stroke: var(--color-cold-gray-000);

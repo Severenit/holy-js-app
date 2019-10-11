@@ -13,7 +13,7 @@ import {Card} from './components/card/card';
 import {Headers} from './components/headers/headers';
 console.log('####: pr', process.env);
 const firebaseConfig = {
-    apiKey: 'AIzaSyB10XXAw6CcviUHlQlDGC_0LE4TtHYhgSY',
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: 'holy-js-app.firebaseapp.com',
     databaseURL: 'https://holy-js-app.firebaseio.com',
     storageBucket: 'holy-js-app.appspot.com',
@@ -103,8 +103,10 @@ class App extends React.PureComponent<Props> {
 
     componentDidMount(): void {
         if (this.state.cards.length === 0) {
-            database.ref('/cards/').once('value').then((item) => {
-                console.log('####: item', item.val());
+            database.ref('/cards/').once('value', snapshot => {
+                const messageObject = snapshot.val();
+                console.log('####: messageObject', messageObject);
+            }).then((item) => {
                 const data = item.val();
                 const cards = Object.keys(data).reduce((arr: any, item: string): any => {
                     arr.push({
@@ -113,7 +115,6 @@ class App extends React.PureComponent<Props> {
                     });
                     return arr;
                 }, []);
-                console.log('####: re', cards);
 
                 this.setState({
                     cards,
@@ -129,9 +130,6 @@ class App extends React.PureComponent<Props> {
         } = this.state;
         return (
             <div>
-                <div className="grids" onClick={() => changeGrids()}>
-                    CHANGE GRIDS
-                </div>
                 <Headers/>
                 <section className="body">
                     <div className="layout">
@@ -217,29 +215,4 @@ class App extends React.PureComponent<Props> {
         // });
     }
 }
-
-function changeGrids() {
-    const theme = window.localStorage.getItem('grids');
-    if (theme && theme === 'true') {
-        window.localStorage.setItem('grids', 'false');
-        document.body.className = document.body.className.replace('theme-grids-desktop', '');
-    } else {
-        window.localStorage.setItem('grids', 'true');
-        document.body.classList.add('theme-grids-desktop');
-    }
-}
-
-function changeTheme() {
-    const theme = window.localStorage.getItem('theme');
-    if (theme && theme === 'light') {
-        window.localStorage.setItem('theme', 'dark');
-        document.body.className = document.body.className.replace('theme-colors-light', '');
-        document.body.classList.add('theme-colors-dark');
-    } else {
-        window.localStorage.setItem('theme', 'light');
-        document.body.className = document.body.className.replace('theme-colors-dark', '');
-        document.body.classList.add('theme-colors-light');
-    }
-}
-
 export default App;

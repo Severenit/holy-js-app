@@ -5,7 +5,7 @@ import {ReactComponent as LogoBig} from './assets/logo-big.svg';
 import {ReactComponent as LogoSmall} from './assets/logo-small.svg';
 import {Button} from '../button/button';
 import {Menu} from '../menu/menu';
-import {IconChart, IconTheme} from '../../icons';
+import {IconChart, IconSize, IconTheme} from '../../icons';
 
 const MENU_DATA = [
     {
@@ -52,6 +52,13 @@ export class Headers extends React.PureComponent<Props> {
             document.body.className = document.body.className.replace('theme-colors-dark', '');
             document.body.classList.add('theme-colors-light');
         }
+
+        const grids = window.localStorage.getItem('grids');
+        if (grids && grids === 'false') {
+            document.body.className = document.body.className.replace('theme-grids-desktop', '');
+        } else {
+            window.localStorage.setItem('grids', 'false');
+        }
     }
 
     public render(): ReactElement {
@@ -88,6 +95,9 @@ export class Headers extends React.PureComponent<Props> {
                                 <span className={s.changeTheme} onClick={() => this.handleChangeTheme()}>
                                     <IconTheme/>
                                 </span>
+                                <span className={s.changeGrids}  onClick={() => this.handleChangeGrids()}>
+                                    <IconSize/>
+                                </span>
                             </span>
 
                         </span>
@@ -107,6 +117,17 @@ export class Headers extends React.PureComponent<Props> {
             window.localStorage.setItem('theme', 'light');
             document.body.className = document.body.className.replace('theme-colors-dark', '');
             document.body.classList.add('theme-colors-light');
+        }
+    }
+
+    private handleChangeGrids(): void {
+        const grids = window.localStorage.getItem('grids');
+        if (grids && grids === 'true') {
+            window.localStorage.setItem('grids', 'false');
+            document.body.className = document.body.className.replace('theme-grids-desktop', '');
+        } else {
+            window.localStorage.setItem('grids', 'true');
+            document.body.classList.add('theme-grids-desktop');
         }
     }
 }
