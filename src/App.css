@@ -9,7 +9,6 @@ body {
     --size-grids-desktop-1024-offset: var(--size-grids-desktop-1024-type-2-offset);
     --grids-desktop-1024-count: var(--grids-desktop-1024-type-2-count);
 }
-.theme,
 .grids {
     color: var(--color-cold-gray-900);
     position: fixed;

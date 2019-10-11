@@ -11,6 +11,17 @@
     font-size: var(--size-font-text-100);
     color: var(--color-cold-gray-900);
 }
+.button-comment svg path {
+    stroke: var(--color-cold-gray-900);
+}
+
+.button-comment svg rect {
+    fill: var(--color-cold-gray-900);
+}
+
+.button-comment:hover svg {
+    fill: var(--color-brand-color);
+}
 
 .button-comment .count {
     margin-left: 4px;

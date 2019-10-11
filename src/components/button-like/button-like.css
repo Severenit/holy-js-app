@@ -15,6 +15,14 @@
     color: var(--color-cold-gray-900);
 }
 
+.button-like svg path {
+    stroke: var(--color-cold-gray-900);
+}
+
+.button-like:hover svg {
+    fill: var(--color-brand-color);
+}
+
 .button-like .count {
     margin-left: 4px;
 }

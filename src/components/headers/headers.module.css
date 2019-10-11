@@ -1,32 +1,31 @@
 @import "../../variables/_colors.css";
-header {
+
+.header {
+    --color-cold-gray-800: #2a2e39;
+    --color-cold-gray-900: #131722;
     --color-cold-gray-000: #ffffff;
     --color-cold-gray-700: #434651;
-    --color-cold-gray-800: #2a2e39;
-    //--color-gray-800: var(--color-cold-gray-800);
-    --color-cold-gray-900: #131722;
     --color-cold-gray-300: #b2b5be;
 }
-
-.header-top {
+.headerTop {
     background-color: var(--color-cold-gray-800);
     width: 100%;
     height: 54px;
 }
-.header-bottom {
+
+.headerBottom {
     background-color: var(--color-cold-gray-900);
     width: 100%;
     height: 54px;
 }
 
-
-.header-grids {
+.headerGrids {
     display: grid;
     grid-template-columns: auto 1fr auto;
 }
 
 @media screen and (max-width: 767px) {
-    .header-grids {
+    .headerGrids {
         display: grid;
         grid-template-columns: auto 1fr;
     }
@@ -46,11 +45,11 @@ header {
     height: 54px;
 }
 
-.logo .logo-big {
+.logo .logoBig {
     display: inline-block;
 }
 
-.logo .logo-small {
+.logo .logoSmall {
     display: none;
 }
 
@@ -69,7 +68,7 @@ header {
     fill: var(--color-brand-color);
 }
 
-.search-input-block {
+.searchInputBlock {
     padding-left: 150px;
     padding-right: 84px;
     display: flex;
@@ -80,16 +79,16 @@ header {
 
 
 @media screen and (max-width: 767px) {
-    .logo .logo-small {
+    .logo .logoSmall {
         display: inline-block;
     }
-    .logo .logo-big,
-    .search-input-block {
+    .logo .logoBig,
+    .searchInputBlock {
         display: none;
     }
 }
 
-.search-input-block input {
+.searchInputBlock input {
     width: 100%;
     background: var(--color-cold-gray-700);
     border-radius: var(--size-border-radius-search);
@@ -102,4 +101,19 @@ header {
     letter-spacing: var(--font-spacing-text-200);
     line-height: var(--size-lineheight-text-200);
     font-size: var(--size-font-text-200);
+}
+
+.menuLayout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.changeTheme {
+    cursor: pointer;
+}
+
+.changeTheme svg circle,
+.changeTheme svg path {
+    stroke: var(--color-cold-gray-000);
 }

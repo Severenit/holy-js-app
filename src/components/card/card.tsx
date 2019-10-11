@@ -16,6 +16,8 @@ type Props = {
     currency: string,
     currencyPrice: number,
     description: string
+    likes: number
+    onClick: () => void
 }
 
 export class Card extends React.PureComponent<Props> {
@@ -26,7 +28,9 @@ export class Card extends React.PureComponent<Props> {
             type,
             currency,
             currencyPrice,
-            description
+            description,
+            likes,
+            onClick
         } = this.props;
         return (
             <div className="card">
@@ -56,7 +60,7 @@ export class Card extends React.PureComponent<Props> {
                         {description}
                     </div>
                     <div className="footer">
-                        <ButtonLike count="999"/>
+                        <ButtonLike count={likes} onClick={onClick}/>
                         <span className="footer-second-column">
                             <ButtonComment count="129"/>
                             <IconShare/>

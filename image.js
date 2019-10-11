@@ -88,7 +88,9 @@ async function main() {
 			let resp = await fetch(`${ baseUrl }/v1/images/${ fileKey }?ids=${ item.id }&format=svg`, {headers});
 			let data = await resp.json();
 			const {images} = data;
-			const name = naming(item.name);
+			console.log('####: item.name', item.name);
+			const name = naming(item.name, '');
+			console.log('####: name', name);
 			const pathIconsFolder = './src/icons/';
 			const pathFolder = `${pathIconsFolder}${name}`
 
@@ -99,7 +101,7 @@ async function main() {
 			download(`${ images[item.id] }`, `${pathFolder}/${name}.svg`, function() {
 
 
-				fs.writeFile(`${pathFolder}/${ name }.jsx`, IconJSX(name, `Icon${item.name.replace('/', '')}`), (err) => {
+				fs.writeFile(`${pathFolder}/${ name }.jsx`, IconJSX(name, `Icon${item.name.replace('/', '').replace(' ', '')}`), (err) => {
 					if (err) console.log(err);
 					shell.exec(`yarn prettier --write ${ pathFolder }/${ name }.jsx`);
 					console.log(`wrote ${pathFolder}/${ name }.jsx`);

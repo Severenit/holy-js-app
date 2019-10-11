@@ -1,11 +1,11 @@
 import React, {ReactElement} from 'react';
 
-import './headers.css';
+import s from './headers.module.css';
 import {ReactComponent as LogoBig} from './assets/logo-big.svg';
 import {ReactComponent as LogoSmall} from './assets/logo-small.svg';
 import {Button} from '../button/button';
 import {Menu} from '../menu/menu';
-import {IconChart} from '../../icons';
+import {IconChart, IconTheme} from '../../icons';
 
 const MENU_DATA = [
     {
@@ -42,25 +42,37 @@ const MENU_DATA = [
 type Props = {}
 
 export class Headers extends React.PureComponent<Props> {
+    public componentDidMount(): void {
+        const theme = window.localStorage.getItem('theme');
+        if (theme && theme === 'dark') {
+            document.body.className = document.body.className.replace('theme-colors-light', '');
+            document.body.classList.add('theme-colors-dark');
+        } else {
+            window.localStorage.setItem('theme', 'light');
+            document.body.className = document.body.className.replace('theme-colors-dark', '');
+            document.body.classList.add('theme-colors-light');
+        }
+    }
+
     public render(): ReactElement {
         return (
-            <header>
-                <div className='header-top'>
+            <header className={s.header}>
+                <div className={s.headerTop}>
                     <div className="layout">
-                        <div className="header-grids">
-                            <div className="logo">
-                                <span className="logo-big">
+                        <div className={s.headerGrids}>
+                            <div className={s.logo}>
+                                <span className={s.logoBig}>
                                     <LogoBig/>
                                 </span>
-                                <span className="logo-small">
+                                <span className={s.logoSmall}>
                                     <LogoSmall/>
                                 </span>
                             </div>
-                            <div className="search-input-block">
+                            <div className={s.searchInputBlock}>
                                 <input type="text" placeholder="Search"/>
                             </div>
-                            <div className="button">
-                                <a href="/" className="link">
+                            <div className={s.button}>
+                                <a href="/" className={s.link}>
                                     Sign in
                                 </a>
                                 <Button>Join for free</Button>
@@ -68,12 +80,33 @@ export class Headers extends React.PureComponent<Props> {
                         </div>
                     </div>
                 </div>
-                <div className='header-bottom'>
+                <div className={s.headerBottom}>
                     <div className="layout">
-                        <Menu items={MENU_DATA} />
+                        <span className={s.menuLayout}>
+                            <Menu items={MENU_DATA} />
+                            <span>
+                                <span className={s.changeTheme} onClick={() => this.handleChangeTheme()}>
+                                    <IconTheme/>
+                                </span>
+                            </span>
+
+                        </span>
                     </div>
                 </div>
             </header>
         )
+    }
+
+    private handleChangeTheme(): void {
+        const theme = window.localStorage.getItem('theme');
+        if (theme && theme === 'light') {
+            window.localStorage.setItem('theme', 'dark');
+            document.body.className = document.body.className.replace('theme-colors-light', '');
+            document.body.classList.add('theme-colors-dark');
+        } else {
+            window.localStorage.setItem('theme', 'light');
+            document.body.className = document.body.className.replace('theme-colors-dark', '');
+            document.body.classList.add('theme-colors-light');
+        }
     }
 }

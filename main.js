@@ -41,9 +41,6 @@ const borderRadiusId = process.env.BORDER_RADIUS
 const spacersId = process.env.SPACERS;
 const version = process.argv[6];
 
-console.log('####: styleType', styleType);
-console.log('####: fileKey', fileKey);
-
 headers.append('X-Figma-Token', devToken);
 
 let query = {
@@ -89,7 +86,6 @@ async function main() {
 			}
 		}
 	}
-
 
 	shell.exec('rm -rf ./properties/token.json');
 
