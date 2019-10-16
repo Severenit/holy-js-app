@@ -1,0 +1,14 @@
+.theme-grids-grids {
+	--size-grids-card-gutter: 20px;
+	--size-grids-card-offset: 20px;
+	--size-grids-desktop-1024-type-1-gutter: 40px;
+	--size-grids-desktop-1024-type-1-offset: 0px;
+	--size-grids-tablet-768-gutter: 20px;
+	--size-grids-tablet-768-offset: 0px;
+	--size-grids-mobile-gutter: 20px;
+	--size-grids-mobile-offset: 20px;
+	--grids-card-count: 1;
+	--grids-desktop-1024-type-1-count: 2;
+	--grids-tablet-768-count: 2;
+	--grids-mobile-count: 1;
+}
