@@ -29,6 +29,10 @@
         display: grid;
         grid-template-columns: auto 1fr;
     }
+
+    .changeGrids {
+        display: none;
+    }
 }
 
 .button {

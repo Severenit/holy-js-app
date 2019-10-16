@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 09 Oct 2019 09:44:45 GMT
+ * Generated on Wed, 16 Oct 2019 15:31:03 GMT
  */
 
 :root {
@@ -10,6 +10,7 @@
  --size-font-textbold-300: 24px;
  --size-font-text-400: 36px;
  --size-font-input: 16px;
+ --size-font-textbold-400: 36px;
  --size-font-text-300: 24px;
  --size-font-text-50: 11px;
  --size-lineheight-text-100: 21px;
@@ -18,6 +19,7 @@
  --size-lineheight-textbold-300: 32px;
  --size-lineheight-text-400: 44px;
  --size-lineheight-input: 18.75px;
+ --size-lineheight-textbold-400: 44px;
  --size-lineheight-text-300: 32px;
  --size-lineheight-text-50: 21px;
  --font-family-text-100: Trebuchet MS, TrebuchetMS;
@@ -26,6 +28,7 @@
  --font-family-textbold-300: Trebuchet MS, TrebuchetMS-Bold;
  --font-family-text-400: Trebuchet MS, TrebuchetMS;
  --font-family-input: Trebuchet MS, TrebuchetMS;
+ --font-family-textbold-400: Trebuchet MS, TrebuchetMS-Bold;
  --font-family-text-300: Trebuchet MS, TrebuchetMS;
  --font-family-text-50: Trebuchet MS, TrebuchetMS;
  --font-weight-text-100: 400;
@@ -34,6 +37,7 @@
  --font-weight-textbold-300: 700;
  --font-weight-text-400: 400;
  --font-weight-input: 400;
+ --font-weight-textbold-400: 700;
  --font-weight-text-300: 400;
  --font-weight-text-50: 400;
  --font-spacing-text-100: normal;
@@ -42,6 +46,7 @@
  --font-spacing-textbold-300: normal;
  --font-spacing-text-400: normal;
  --font-spacing-input: normal;
+ --font-spacing-textbold-400: normal;
  --font-spacing-text-300: normal;
  --font-spacing-text-50: normal;
 }

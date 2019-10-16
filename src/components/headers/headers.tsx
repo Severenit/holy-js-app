@@ -55,7 +55,7 @@ export class Headers extends React.PureComponent<Props> {
 
         const grids = window.localStorage.getItem('grids');
         if (grids && grids === 'false') {
-            document.body.className = document.body.className.replace('theme-grids-desktop', '');
+            document.body.className = document.body.className.replace('theme-grids-grids', '');
         } else {
             window.localStorage.setItem('grids', 'false');
         }
@@ -93,10 +93,10 @@ export class Headers extends React.PureComponent<Props> {
                             <Menu items={MENU_DATA} />
                             <span>
                                 <span className={s.changeTheme} onClick={() => this.handleChangeTheme()}>
-                                    <IconTheme/>
+                                    <IconTheme />
                                 </span>
                                 <span className={s.changeGrids}  onClick={() => this.handleChangeGrids()}>
-                                    <IconSize/>
+                                    <IconSize />
                                 </span>
                             </span>
 
@@ -124,10 +124,10 @@ export class Headers extends React.PureComponent<Props> {
         const grids = window.localStorage.getItem('grids');
         if (grids && grids === 'true') {
             window.localStorage.setItem('grids', 'false');
-            document.body.className = document.body.className.replace('theme-grids-desktop', '');
+            document.body.className = document.body.className.replace('theme-grids-grids', '');
         } else {
             window.localStorage.setItem('grids', 'true');
-            document.body.classList.add('theme-grids-desktop');
+            document.body.classList.add('theme-grids-grids');
         }
     }
 }

@@ -1,6 +1,7 @@
 const styleType = process.argv[2] || null;
 const prefixNameStyle = process.argv[3] || null;
 
+
 const fs = require('fs');
 const dotenv = require('dotenv')
 const dotenvOptions = {}
@@ -61,6 +62,7 @@ if (version) {
 
 async function main() {
 	console.log('> We start, please wait...');
+	shell.exec('rm -rf ./properties/token.json');
 	const style = await getStylesArtboard(fileKey, query.url, styleType);
 
 	let result = style;
@@ -87,12 +89,12 @@ async function main() {
 		}
 	}
 
-	shell.exec('rm -rf ./properties/token.json');
+	
 
 	const pathWriteFile = `./properties/token.json`;
 
 	fs.writeFile(pathWriteFile, JSON.stringify(result), (err) => {
-		StyleDictionary.cleanAllPlatforms();
+		// StyleDictionary.cleanAllPlatforms();
 		if (err) console.log(err);
 		console.log(`> Ok, we finish! And wrote file ${pathWriteFile}`);
 		console.log('> Now, we will compile the styles for you! -->');

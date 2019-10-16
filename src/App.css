@@ -1,13 +1,5 @@
 body {
-    --size-grids-desktop-1024-gutter: var(--size-grids-desktop-1024-type-1-gutter);
-    --size-grids-desktop-1024-offset: var(--size-grids-desktop-1024-type-1-offset);
-    --grids-desktop-1024-count: var(--grids-desktop-1024-type-1-count);
     background-color: var(--color-cold-gray-100);
-}
-.theme-grids-desktop {
-    --size-grids-desktop-1024-gutter: var(--size-grids-desktop-1024-type-2-gutter);
-    --size-grids-desktop-1024-offset: var(--size-grids-desktop-1024-type-2-offset);
-    --grids-desktop-1024-count: var(--grids-desktop-1024-type-2-count);
 }
 
 .layout {
@@ -43,9 +35,9 @@ body {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(var(--grids-desktop-1024-count), 1fr);
-    grid-column-gap: var(--size-grids-desktop-1024-gutter);
-    padding: 0 var(--size-grids-desktop-1024-offset);
+    grid-template-columns: repeat(var(--grids-desktop-1024-type-1-count), 1fr);
+    grid-column-gap: var(--size-grids-desktop-1024-type-1-gutter);
+    padding: 0 var(--size-grids-desktop-1024-type-1-offset);
     justify-items: stretch;
 }
 

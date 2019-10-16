@@ -1,11 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 09 Oct 2019 09:44:45 GMT
+ * Generated on Wed, 16 Oct 2019 15:31:03 GMT
  */
 
 :root {
+ --size-spacers-spacer-700: 28px;
  --size-spacers-spacer-600: 24px;
- --size-spacers-spacer-500: 20px;
+ --size-spacers-spacer-500: 38px;
  --size-spacers-spacer-400: 16px;
  --size-spacers-spacer-300: 12px;
  --size-spacers-spacer-200: 8px;
