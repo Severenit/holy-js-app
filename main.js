@@ -14,21 +14,6 @@ const fetch = require('node-fetch');
 const shell = require('shelljs');
 
 const generateConfig = require('./lib/generate-config')
-const StyleDictionary = require('style-dictionary').extend(generateConfig({prefix: prefixNameStyle, type: styleType}));
-
-StyleDictionary.registerFormat({
-	name: 'my/theme',
-	formatter: function(dictionary) {
-		const { allProperties } = dictionary;
-		return allProperties.reduce((acc, item, index) => {
-			acc += `\t--${item.name}: ${item.value};\n`;
-			if (index === dictionary.allProperties.length-1) {
-				acc += '}'
-			}
-			return acc;
-		}, `.theme-${styleType}-${prefixNameStyle} {\n`)
-	}
-})
 
 const getStylesArtboard = require('./lib/get-styles-artboard.js');
 const getSpacers = require('./lib/get-spacers.js');
@@ -94,7 +79,24 @@ async function main() {
 	const pathWriteFile = `./properties/token.json`;
 
 	fs.writeFile(pathWriteFile, JSON.stringify(result), (err) => {
-		// StyleDictionary.cleanAllPlatforms();
+		const StyleDictionary = require('style-dictionary').extend(generateConfig({prefix: prefixNameStyle, type: styleType}));
+
+		StyleDictionary.registerFormat({
+			name: 'my/theme',
+			formatter: function(dictionary) {
+				const { allProperties } = dictionary;
+				return allProperties.reduce((acc, item, index) => {
+					acc += `\t--${item.name}: ${item.value};\n`;
+					if (index === dictionary.allProperties.length-1) {
+						acc += '}'
+					}
+					return acc;
+				}, `.theme-${styleType}-${prefixNameStyle} {\n`)
+			}
+		})
+		
+		StyleDictionary.cleanAllPlatforms();
+		shell.exec(`yarn prettier --write ./properties/token.json`);
 		if (err) console.log(err);
 		console.log(`> Ok, we finish! And wrote file ${pathWriteFile}`);
 		console.log('> Now, we will compile the styles for you! -->');
