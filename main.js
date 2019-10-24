@@ -75,7 +75,7 @@ async function main() {
 		}
 	}
 
-	
+
 
 	const pathWriteFile = `./properties/token.json`;
 
@@ -95,8 +95,8 @@ async function main() {
 					return acc;
 				}, `[${prefixNameStyle}] * {\n`)
 			}
-		})
-		
+		});
+
 		StyleDictionary.cleanAllPlatforms();
 		shell.exec(`yarn prettier --write ./properties/token.json`);
 		if (err) console.log(err);

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 19 Oct 2019 11:03:31 GMT
+ * Generated on Thu, 24 Oct 2019 16:28:51 GMT
  */
 
 :root {
@@ -12,11 +12,8 @@
  --size-grids-tablet-768-offset: 0px;
  --size-grids-mobile-gutter: 20px;
  --size-grids-mobile-offset: 20px;
- --size-grids-desktop-1024-type-2-gutter: 40px;
- --size-grids-desktop-1024-type-2-offset: 0px;
  --grids-card-count: 1;
- --grids-desktop-1024-type-1-count: 3;
+ --grids-desktop-1024-type-1-count: 2;
  --grids-tablet-768-count: 2;
  --grids-mobile-count: 1;
- --grids-desktop-1024-type-2-count: 2;
 }
