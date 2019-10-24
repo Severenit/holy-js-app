@@ -1,4 +1,4 @@
-.theme-colors-dark {
+[dark] * {
 	--color-cold-gray-000: #000000;
 	--color-cold-gray-900: #f0f3fa;
 	--color-cold-gray-150: #2a2e39;

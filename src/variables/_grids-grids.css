@@ -1,4 +1,4 @@
-.theme-grids-grids {
+[grids] * {
 	--size-grids-card-gutter: 20px;
 	--size-grids-card-offset: 20px;
 	--size-grids-desktop-1024-type-1-gutter: 40px;

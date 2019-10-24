@@ -1,0 +1,16 @@
+[white] * {
+	--color-cold-gray-000: #ffffff !important;
+	--color-cold-gray-900: #131722 !important;
+	--color-cold-gray-150: #e0e3eb !important;
+	--color-cold-gray-500: #787b86 !important;
+	--color-minty-green-500: #009688 !important;
+	--color-purple-notes: #d828dc !important;
+	--color-ripe-red-500: #f44336 !important;
+	--color-cold-gray-100: #f0f3fa !important;
+	--color-cold-gray-800: #2a2e39 !important;
+	--color-brand-color: #2196f3 !important;
+	--color-cold-gray-700: #434651 !important;
+	--color-cold-gray-300: #b2b5be !important;
+	--color-cold-gray-200: #d1d4dc !important;
+	--color-brand-color-hover: #1976d2 !important;
+}

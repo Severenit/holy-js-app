@@ -1,8 +1,6 @@
 @import "../../variables/_colors.css";
 
 .menu {
-    --color-cold-gray-100: #f0f3fa;
-
     margin: 0;
     display: flex;
     justify-content: flex-start;

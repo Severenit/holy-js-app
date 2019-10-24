@@ -1,12 +1,3 @@
-@import "../../variables/_colors.css";
-
-.header {
-    --color-cold-gray-800: #2a2e39;
-    --color-cold-gray-900: #131722;
-    --color-cold-gray-000: #ffffff;
-    --color-cold-gray-700: #434651;
-    --color-cold-gray-300: #b2b5be;
-}
 .headerTop {
     background-color: var(--color-cold-gray-800);
     width: 100%;

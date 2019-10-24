@@ -37,25 +37,23 @@ const MENU_DATA = [
         id: 7,
         name: 'More'
     }
-]
+];
 
 type Props = {}
 
 export class Headers extends React.PureComponent<Props> {
     public componentDidMount(): void {
         const theme = window.localStorage.getItem('theme');
+        const html = document.getElementsByTagName('html')[0];
         if (theme && theme === 'dark') {
-            document.body.className = document.body.className.replace('theme-colors-light', '');
-            document.body.classList.add('theme-colors-dark');
+            html.setAttribute('dark', 'true');
         } else {
             window.localStorage.setItem('theme', 'light');
-            document.body.className = document.body.className.replace('theme-colors-dark', '');
-            document.body.classList.add('theme-colors-light');
         }
 
         const grids = window.localStorage.getItem('grids');
         if (grids && grids === 'false') {
-            document.body.className = document.body.className.replace('theme-grids-grids', '');
+            html.removeAttribute('grids');
         } else {
             window.localStorage.setItem('grids', 'false');
         }
@@ -63,7 +61,8 @@ export class Headers extends React.PureComponent<Props> {
 
     public render(): ReactElement {
         return (
-            <header className={s.header}>
+            //@ts-ignore
+            <header white="true">
                 <div className={s.headerTop}>
                     <div className="layout">
                         <div className={s.headerGrids}>
@@ -92,11 +91,11 @@ export class Headers extends React.PureComponent<Props> {
                         <span className={s.menuLayout}>
                             <Menu items={MENU_DATA} />
                             <span>
-                                <span className={s.changeTheme} onClick={() => this.handleChangeTheme()}>
-                                    <IconTheme />
+                                <span className={s.changeTheme} onClick={() => Headers.handleChangeTheme()}>
+
                                 </span>
-                                <span className={s.changeGrids}  onClick={() => this.handleChangeGrids()}>
-                                    <IconSize />
+                                <span className={s.changeGrids}  onClick={() => Headers.handleChangeGrids()}>
+
                                 </span>
                             </span>
 
@@ -107,27 +106,29 @@ export class Headers extends React.PureComponent<Props> {
         )
     }
 
-    private handleChangeTheme(): void {
-        const theme = window.localStorage.getItem('theme');
+    private static handleChangeTheme(): void {
+        const html = document.getElementsByTagName('html')[0];
+        const localStorage = window.localStorage;
+        const theme = localStorage.getItem('theme');
+
         if (theme && theme === 'light') {
-            window.localStorage.setItem('theme', 'dark');
-            document.body.className = document.body.className.replace('theme-colors-light', '');
-            document.body.classList.add('theme-colors-dark');
+            localStorage.setItem('theme', 'dark');
+            html.setAttribute('dark', 'true');
         } else {
-            window.localStorage.setItem('theme', 'light');
-            document.body.className = document.body.className.replace('theme-colors-dark', '');
-            document.body.classList.add('theme-colors-light');
+            localStorage.setItem('theme', 'light');
+            html.removeAttribute('dark');
         }
     }
 
-    private handleChangeGrids(): void {
+    private static handleChangeGrids(): void {
+        const html = document.getElementsByTagName('html')[0];
         const grids = window.localStorage.getItem('grids');
         if (grids && grids === 'true') {
             window.localStorage.setItem('grids', 'false');
-            document.body.className = document.body.className.replace('theme-grids-grids', '');
+            html.removeAttribute('grids');
         } else {
             window.localStorage.setItem('grids', 'true');
-            document.body.classList.add('theme-grids-grids');
+            html.setAttribute('grids', 'true');
         }
     }
 }

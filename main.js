@@ -1,10 +1,11 @@
 const styleType = process.argv[2] || null;
 const prefixNameStyle = process.argv[3] || null;
+const important = process.argv[4] || null;
 
 
 const fs = require('fs');
-const dotenv = require('dotenv')
-const dotenvOptions = {}
+const dotenv = require('dotenv');
+const dotenvOptions = {};
 
 if (prefixNameStyle) {
 	dotenvOptions.path = `.env.${prefixNameStyle}`;
@@ -85,13 +86,14 @@ async function main() {
 			name: 'my/theme',
 			formatter: function(dictionary) {
 				const { allProperties } = dictionary;
+
 				return allProperties.reduce((acc, item, index) => {
-					acc += `\t--${item.name}: ${item.value};\n`;
+					acc += `\t--${item.name}: ${item.value}${important ? ' !important' : ''};\n`;
 					if (index === dictionary.allProperties.length-1) {
 						acc += '}'
 					}
 					return acc;
-				}, `.theme-${styleType}-${prefixNameStyle} {\n`)
+				}, `[${prefixNameStyle}] * {\n`)
 			}
 		})
 		

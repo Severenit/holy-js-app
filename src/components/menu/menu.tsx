@@ -18,11 +18,11 @@ export class Menu extends React.PureComponent<Props> {
             items
         } = this.props;
         return (
-            <ul className="menu">
+            <ul className="style-scope menu">
                 {
                     items.map(item => (
-                        <li key={item.id}>
-                            <a href="/">
+                        <li key={item.id} className="style-scope">
+                            <a href="/" className="style-scope">
                                 {item.icons}
                                 {item.icons ? ' ' : null}
                                 {item.name}
