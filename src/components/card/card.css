@@ -20,7 +20,7 @@
     color: var(--color-cold-gray-900);
     margin: 0 0 var(--size-spacers-spacer-200);
     padding: 0;
-    font-family: var(--font-family-text-300);
+    font-family: var(--font-family-textbold-300);
     font-weight: var(--font-weight-text-300);
     letter-spacing: var(--font-spacing-text-300);
     line-height: var(--size-lineheight-text-300);
