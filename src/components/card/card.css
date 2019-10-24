@@ -21,9 +21,9 @@
     margin: 0 0 var(--size-spacers-spacer-200);
     padding: 0;
     font-family: var(--font-family-textbold-300);
-    font-weight: var(--font-weight-text-300);
-    letter-spacing: var(--font-spacing-text-300);
-    line-height: var(--size-lineheight-text-300);
+    font-weight: var(--font-weight-textbold-300);
+    letter-spacing: var(--font-spacing-textbold-300);
+    line-height: var(--size-lineheight-textbold-300);
     font-size: var(--size-font-textbold-300);
 }
 
