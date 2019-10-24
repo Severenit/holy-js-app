@@ -1,6 +1,7 @@
 import React, {ReactElement} from 'react';
 
 import './menu.css';
+import {IconBurgerMenu} from "../../icons";
 
 type Props = {
     items: Array<Item>
@@ -17,8 +18,12 @@ export class Menu extends React.PureComponent<Props> {
         const {
             items
         } = this.props;
+
         return (
             <ul className="style-scope menu">
+                <li className="burger-menu">
+                    <IconBurgerMenu/>
+                </li>
                 {
                     items.map(item => (
                         <li key={item.id} className="style-scope">

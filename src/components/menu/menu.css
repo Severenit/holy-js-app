@@ -13,7 +13,23 @@
     list-style: none;
     margin-right: 40px;
     white-space: nowrap;
+}
 
+.menu li.burger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .menu li {
+        display: none;
+    }
+    .menu li.burger-menu {
+        display: block;
+    }
+}
+
+.menu li.burger-menu svg rect {
+    fill: var(--color-cold-gray-100);
 }
 
 .menu li:last-child {
