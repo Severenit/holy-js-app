@@ -1,12 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Thu, 24 Oct 2019 16:45:24 GMT
+ * Generated on Tue, 29 Oct 2019 17:50:53 GMT
  */
 
 :root {
  --size-border-radius-button-like: 18px;
  --size-border-radius-card-user: 14px;
- --size-border-radius-label-short: 22px;
+ --size-border-radius-label-long: 10px;
+ --size-border-radius-label-short: 10px;
  --size-border-radius-search: 17px;
  --size-border-radius-join-button: 4px;
  --size-border-radius-card-base: 8px;
