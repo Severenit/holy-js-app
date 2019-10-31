@@ -92,10 +92,9 @@ export class Headers extends React.PureComponent<Props> {
                             <Menu items={MENU_DATA} />
                             <span>
                                 <span className={s.changeTheme} onClick={() => Headers.handleChangeTheme()}>
-                                    {/*<IconTheme/>*/}
+                                    <IconTheme/>
                                 </span>
                                 <span className={s.changeGrids}  onClick={() => Headers.handleChangeGrids()}>
-                                    {/*<IconSize/>*/}
                                 </span>
                             </span>
 
