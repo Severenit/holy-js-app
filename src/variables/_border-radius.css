@@ -1,14 +1,14 @@
 /**
  * Do not edit directly
- * Generated on Wed, 06 Nov 2019 14:12:12 GMT
+ * Generated on Sat, 09 Nov 2019 08:01:45 GMT
  */
 
 :root {
- --size-border-radius-button-like: 18px;
- --size-border-radius-card-user: 14px;
- --size-border-radius-label-long: 10px;
- --size-border-radius-label-short: 10px;
- --size-border-radius-search: 17px;
- --size-border-radius-join-button: 4px;
  --size-border-radius-card-base: 8px;
+ --size-border-radius-card-user: 14px;
+ --size-border-radius-button-like: 18px;
+ --size-border-radius-label-short: 10px;
+ --size-border-radius-label-long: 10px;
+ --size-border-radius-join-button: 4px;
+ --size-border-radius-search: 17px;
 }
