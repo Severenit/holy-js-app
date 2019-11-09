@@ -9,3 +9,4 @@ export * from "./long/long";
 export * from "./search/search";
 export * from "./share/share";
 export * from "./short/short";
+export * from "./size/size";
