@@ -10,3 +10,4 @@ export * from "./search/search";
 export * from "./share/share";
 export * from "./short/short";
 export * from "./size/size";
+export * from "./theme/theme";

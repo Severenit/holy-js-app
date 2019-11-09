@@ -5,7 +5,7 @@ import {ReactComponent as LogoBig} from './assets/logo-big.svg';
 import {ReactComponent as LogoSmall} from './assets/logo-small.svg';
 import {Button} from '../button/button';
 import {Menu} from '../menu/menu';
-import {IconChart} from '../../icons';
+import {IconChart, IconSize, IconTheme} from '../../icons';
 
 const MENU_DATA = [
     {
