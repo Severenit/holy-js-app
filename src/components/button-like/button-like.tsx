@@ -1,7 +1,7 @@
 import React, {ReactElement} from 'react';
 
 import './button-like.css';
-import {IconLike} from '../../icons';
+import {IconLike, IconLikeActive} from '../../icons';
 
 type Props = {
     count: number
@@ -17,7 +17,8 @@ export class ButtonLike extends React.PureComponent<Props> {
 
         return (
             <div className='button-like' onClick={onClick}>
-                <IconLike/>
+                <IconLike className='like'/>
+                <IconLikeActive className='like-active'/>
                 <span className="count">{count}</span>
             </div>
         )

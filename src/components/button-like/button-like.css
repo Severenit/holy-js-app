@@ -19,8 +19,21 @@
     stroke: var(--color-cold-gray-900);
 }
 
-.button-like:hover svg {
+.button-like .like-active {
+    display: none;
+}
+
+.button-like:hover .like {
+    display: none;
+}
+
+.button-like:hover .like-active {
+    display: block;
+}
+
+.button-like:hover svg path {
     fill: var(--color-brand-color);
+    stroke: none;
 }
 
 .button-like .count {
