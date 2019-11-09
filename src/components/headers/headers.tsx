@@ -5,7 +5,7 @@ import {ReactComponent as LogoBig} from './assets/logo-big.svg';
 import {ReactComponent as LogoSmall} from './assets/logo-small.svg';
 import {Button} from '../button/button';
 import {Menu} from '../menu/menu';
-import {IconChart, IconSize} from '../../icons';
+import {IconChart, IconSize, IconTheme} from '../../icons';
 
 const MENU_DATA = [
     {
@@ -92,7 +92,7 @@ export class Headers extends React.PureComponent<Props> {
                             <Menu items={MENU_DATA} />
                             <span>
                                 <span className={s.changeTheme} onClick={() => Headers.handleChangeTheme()}>
-
+                                    <IconTheme/>
                                 </span>
                                 <span className={s.changeGrids}  onClick={() => Headers.handleChangeGrids()}>
                                     <IconSize/>
