@@ -48,7 +48,7 @@
 		"postcss-preset-env": "^6.7.0",
 		"prettier": "1.18.2",
 		"qs": "6.9.0",
-		"shelljs": "0.8.3",
+		"shelljs": "0.8.5",
 		"style-dictionary": "2.8.2"
 	}
 }
